@@ -1,67 +1,84 @@
 <style>
-  div {background-color: #470D0E;
-       color: #FFF;
-       border-radius: 10px;
-       padding: 1.5em;
-       float: left;
-       }
-  table {border-collapse: collapse;
-         border: 2px solid #D6A000;}
-  td, th, tr {color: #FFF;
-          padding: 0.5em 2em 0.5em 2em;}
-  tr:nth-child(odd) {background-color: #581011;}
-  tr:nth-child(even) {background-color: #470D0E;}
-  thead tr:nth-child(odd) {background-color: #470D0E;}
-  .table-border {padding: 1em;
-                 margin: 1em 0;
-                 background-color: #D6A000;}
-  .copy {color: #581011;}
+    div {
+        background-color: #470D0E;
+        color: #FFF;
+        border-radius: 10px;
+        padding: 1.5em;
+        float: left;
+    }
+    table {
+        border-collapse: collapse;
+        border: 2px solid #D6A000;}
+    td, th, tr {
+        color: #FFF;
+        padding: 0.5em 1em 0.5em 1em;
+    }
+    tr:nth-child(odd), tr.odd {
+        background-color: #581011;
+    }
+    tr:nth-child(even), tr.even {
+        background-color: #470D0E;
+    }
+    thead tr:nth-child(odd) {
+        background-color: #470D0E;
+    }
+    .table-border {
+        padding: 1em;
+        margin: 1em 0;
+        background-color: #D6A000;
+    }
+    .copy {
+        color: #581011;
+        padding-top: 1em;
+        size:0.5em;
+        float:right;
+    }
 </style>
-
 <div>
-<p>Kevan,<br>
-Your individual feedback follows:</p>
-<div class="table-border">
-<table>
-  <thead>
-    <tr>
-      <th>Section</th>
-      <th>Feedback</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Station 1</td>
-      <td>Sloppy like Joe.</td>
-    </tr>
-    <tr>
-      <td>Run Cadence</td>
-      <td>Good, not great.</td>
-    </tr>
-    <tr>
-      <td>Minn March</td>
-      <td>Too much Sousa</td>
-    </tr>
-    <tr>
-      <td>Battle Hymn</td>
-      <td>Dah DahDah DahDah DahDah DahDah DahDah DahDaahhhhhhhhhhhhhhhhh</td>
-    </tr>
-    <tr>
-      <td>Station 3</td>
-      <td>Really not as fun as DMs say it is.</td>
-    </tr>
-    <tr>
-      <td>Our Minn</td>
-      <td>You betcha.</td>
-    </tr>
-    <tr>
-      <td>General comments</td>
-      <td>You betcha.</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-<br>
-<p>Thanks for your hard work........<br>The management</p>
-<p class="copy" style="padding-top: 1em; size:0.5em; float:right;">&copy; Kevan Ahlquist</p>
+    <p><?= name ?>,<br>
+        <?= introMessage ?>
+    </p>
+    <table>
+        <thead>
+            <tr class="odd">
+                <th>Section</th>
+                <th>Feedback</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="even">
+                <td>Station 1</td>
+                <td><?= stationOne ?></td>
+            </tr>
+            <tr class="odd">
+                <td>Run Cadence</td>
+                <td><?= runCadence ?></td>
+            </tr>
+            <tr class="even">
+                <td>Minn March</td>
+                <td><?= minnMarch ?></td>
+            </tr>
+            <tr class="odd">
+                <td>Battle Hymn</td>
+                <td><?= battleHymn ?></td>
+            </tr>
+            <tr class="even">
+                <td>Station 3</td>
+                <td><?= stationThree ?></td>
+            </tr>
+            <tr class="odd">
+                <td>Our Minn</td>
+                <td><?= ourMinn ?></td>
+            </tr>
+            <tr class="even">
+                <td>General comments</td>
+                <td><?= generalComments ?></td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <p style="clear: both;"><?= closingMessage ?><br>
+        <?= signature ?>
+    </p>
+    <p class="copy">&copy; Kevan Ahlquist</p>
 </div>
