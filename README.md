@@ -1,7 +1,7 @@
 # UMMB Audition Feedback Emails
 
 ## How to use
-1. Copy the template spreadsheet and add your section members' names. This is now your section's template.
+1. Copy the template spreadsheet that I shared with you (File > Make a copy...) and add your section members' names and email addresses. This is now your section's template.
 2. Copy your section template for each set of audition feedback and name the spreadsheet with the date.
 1. Fill in the feedback.
 2. Click the "Send Emails" button.
